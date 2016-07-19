@@ -19,17 +19,17 @@ let AuthPage = Object.create(Page, {
   /* define elements */
   account: {
     get: () => {
-      return $.element('#backendEmail');
+      return browser.element('#backendEmail');
     }
   },
   password: {
     get: () => {
-      return $.element('#backendPassword');
+      return browser.element('#backendPassword');
     }
   },
   loginButton: {
     get: () => {
-      return $.element('[name=login]');
+      return browser.element('[name=login]');
     }
   }
 });
